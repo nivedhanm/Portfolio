@@ -67,6 +67,9 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+.imgContainer{
+  float:left;
+}
 header {
   text-align: center;
   background: #18BC9C;
@@ -452,7 +455,7 @@ fieldset[disabled] .btn-success.active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 .portfolio-modal .modal-content h2 {
   margin: 0;
