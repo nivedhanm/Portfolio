@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>function printElement(elem, append, delimiter) {
+    var domClone = elem.cloneNode(true);
 
+    var $printSection = document.getElementById("printSection");
+
+    if (!$printSection) {
+        $printSection = document.createElement("div");
+        $printSection.id = "printSection";
+        document.body.appendChild($printSection);
+    }
+
+    if (append !== true) {
+        $printSection.innerHTML = "";
+    }
+
+    else if (append === true) {
+        if (typeof (delimiter) === "string") {
+            $printSection.innerHTML += delimiter;
+        }
+        else if (typeof (delimiter) === "object") {
+            $printSection.appendChlid(delimiter);
+        }
+    }
+
+    $printSection.appendChild(domClone);
+}​
+</script>
 <head>
 
     <meta charset="utf-8">
@@ -159,6 +185,11 @@
                     </a>
                 </div>
             </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a href="files\Portfolio_Printable.pdf" class="btn btn-success btn-lg">
+                    <i class="fa fa-file-pdf-o"></i> Download Portfolio
+                </a>
+            </div>
         </div>
     </section>
 
@@ -233,7 +264,7 @@
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="files\NivedhanManavalanResume.pdf" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Resume
+                        <i class="fa fa-file-pdf-o"></i> Download Resume
                     </a>
                 </div>
             </div>
@@ -468,7 +499,7 @@
                             <h2>Comparative Shopping Concept</h2>
                             <hr class="star-primary">
                             <img src="img\Shopping\Home.png" class="img-responsive img-centered" alt="">
-                            <p align ="justify">For this project we were given the task of observing a comparative shopping experience and then based on the observation create an interaction that would facilitate an improved shopping experience. Before we began the process of user observation, We went through the comparative shopping process ourselves to see if we could find any usability issues that required further research.</p>
+                            <p align ="justify">For this project, we were given the task of observing a comparative shopping experience and then based on the observation create an interaction that would facilitate an improved shopping experience. Before we began the process of user observation, We went through the comparative shopping process ourselves to see if we could find any usability issues that required further research.</p>
                             <img src="img\Shopping\name.png" class="img-responsive img-centered" alt="">
                             <p align ="justify">I noticed something odd about how the products were named. All the product specifications were written in the product name rather than in the description page. Suspecting a difference in the System model of Amazon and how the user's mental model was created, we conducted some user observation tests where we asked the users to perform a task of buying a Bluetooth speaker by comparing alternatives with no restrictions.</p>
                             <p align ="justify">One of the things we noticed was that users sometimes decided on the products they purchase directly from the search results page. They only researched products that were selected in the first step. We also identified that three sources of information were important in the decision-making process: Reviews; video reviews and specifications. We therefore wanted to create an interface that would enable access to this information straight from the search results page.</p>
@@ -512,7 +543,7 @@
                             <hr class="star-primary">
                             <img src="img\Trucke\trucke.gif" class="img-responsive img-centered" alt="">
                             <p align ="justify">What's so unique about a uber clone? Turns out, a lot. Trucke is a student owned College Station start-up trying to get into the gig economy by bringing together Students who move to a new house and truck owners who can help them.</p>
-                            <p align ="justify">In essence Trucke wants to prevent moving from looking a lot like this</p>
+                            <p align ="justify">In essence, Trucke wants to prevent moving from looking a lot like this</p>
                             <img src="img\Trucke\sedan.jpg" class="img-responsive img-centered" alt="">
                             <p align ="justify">The founders of trucke wanted to enable students in the college station community to move without using expensive services like uhaul. They started with a trial run of their service this past summer and got a lot of positive feedback and inputs from the community. I worked with the founders to distill this customer data and suggest how to merge their business process with the uber model. The founders came up with 3 pricing tiers based on their experience</p>
                             <div id = "tiers" >
@@ -581,7 +612,7 @@
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>November 2016>
+                                    <strong>November 2016
                                     </strong>
                                 </li>
                                 <li>Service:
