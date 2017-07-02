@@ -1,32 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>function printElement(elem, append, delimiter) {
-    var domClone = elem.cloneNode(true);
-
-    var $printSection = document.getElementById("printSection");
-
-    if (!$printSection) {
-        $printSection = document.createElement("div");
-        $printSection.id = "printSection";
-        document.body.appendChild($printSection);
-    }
-
-    if (append !== true) {
-        $printSection.innerHTML = "";
-    }
-
-    else if (append === true) {
-        if (typeof (delimiter) === "string") {
-            $printSection.innerHTML += delimiter;
-        }
-        else if (typeof (delimiter) === "object") {
-            $printSection.appendChlid(delimiter);
-        }
-    }
-
-    $printSection.appendChild(domClone);
-}​
-</script>
 <head>
 
     <meta charset="utf-8">
@@ -111,11 +84,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/nivedhan.png" alt="">
+                    <!-- <img class="img-responsive" src="img/nivedhan.png" alt=""> -->
                     <div class="intro-text">
-                        <span class="name">Nivedhan Manavalan</span>
+                        <h3><span class="name">Howdy!</span></h3>
+                        <h5><span class="name">I'm Nivedhan Manavalan</span></h5>
                         <hr class="star-light">
-                        <span class="skills"> UX Designer & Technologist</span>
+                        <span class="skills"> I am a UX designer, experienced developer and a student of the Lean Startup Methodology. I love designing products with a focus on customer needs & their stories, bringing out products that are beautiful, functional and most importantly responsive</span>
                     </div>
                 </div>
             </div>
@@ -401,7 +375,7 @@
                 <div class="row">
                     <div class="footer-col col-md-4">
                         <h3>Address</h3>
-                        <p>4302 College Main Street
+                        <p>3902 College Main Street
                             <br>Bryan, Texas 77801</p>
                     </div>
                     <div class="footer-col col-md-4">
@@ -417,9 +391,9 @@
                             <li>
                                 <a href="https://www.linkedin.com/in/nivedhan/" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                            <li>
+                            <!--<li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
@@ -441,7 +415,7 @@
     </footer>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <div class="scroll-top page-scroll">
         <a class="btn btn-primary" href="#page-top">
             <i class="fa fa-chevron-up"></i>
         </a>
@@ -895,7 +869,16 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+      ga('create', 'UA-101976555-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>    
 </body>
 
 </html>
