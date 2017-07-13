@@ -100,33 +100,55 @@
             </div>
         </div>
     </header>
-
-    <!-- Begin Navbar
-    <div id="nav" class="">
-    <div class="navbar navbar-inverse navbar-static hidden-xs">
-        <div class="container">
-            <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="glyphicon glyphicon-bar"></span>
-        <span class="glyphicon glyphicon-bar"></span>
-        <span class="glyphicon glyphicon-bar"></span>
-      </a>
-
-            <div class="navbar-collapse collapse" style ="text-align:center">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" class="">Home</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li><a href="#" class="">Link</a>
-                    </li>
-                    <li><a href="#" class="">Link</a>
-                    </li>
-                </ul>
-
-            </div>
+<!-- =================================== Secondary Nav Bar for Portfolio Page =================================== -->
+    <div id="nav" class="navbar navbar-static board-inner page-scroll" >
+      <div class="container">
+        <ul class="nav nav-tabs text-center" id="myTab">
+          <!-- <div class="liner"></div> -->
+              <li class="page-scroll">
+                  <a href="#overview" title="Overview">
+                    <span class="round-tabs">
+                      <i class="fa fa-th-list"></i>
+                    </span>
+                  </a>
+                  <h5 class="hidden-xs"><span>Overview</span></h5>
+              </li>
+              <li class="page-scroll">
+                  <a href="#problem" title="Problem">
+                    <span class="round-tabs">
+                      <i class="fa fa-question-circle-o"></i>
+                    </span>
+                  </a>
+                  <h5 class="hidden-xs"><span>Problem</span></h5>
+              </li>
+              <li class="page-scroll">
+                  <a href="#process" data-toggle="tab" title="Process">
+                    <span class="round-tabs">
+                      <i class="fa fa-cogs"></i>
+                    </span>
+                  </a>
+                  <h5 class="hidden-xs"><span>Process</span></h5>
+              </li>
+              <li class="page-scroll">
+                  <a href="#users" data-toggle="tab" title="Users">
+                    <span class="round-tabs">
+                      <i class="fa fa-user"></i>
+                    </span>
+                  </a>
+                  <h5 class="hidden-xs"><span>User</span></h5>
+              </li>
+              <li class="page-scroll">
+                  <a href="#results" data-toggle="tab" title="Results">
+                    <span class="round-tabs">
+                      <i class="fa fa-check"></i>
+                    </span>
+                  </a>
+                  <h5 class="hidden-xs"><span>Results</span></h5>
+              </li>
+          </ul>
         </div>
     </div>
-     /.navbar
-  </div>-->
+    <!--/ End of Sec Nav -->
 
     <!-- =================================== PROJECT DESCRIPTION =================================== -->
   <div class="container">
@@ -134,7 +156,7 @@
 				<!-- =================================== OVERVIEW =================================== -->
 				<section id="overview">
           <div class="row">
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                   <h2>Overview</h2>
                   <hr class="star-primary">
               </div>
@@ -151,7 +173,7 @@
 				<!-- =================================== PROBLEM =================================== -->
 				<section id="problem">
           <div class="row">
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                   <h2>The Problem</h2>
                   <hr class="star-primary">
               </div>
@@ -173,7 +195,7 @@
 				<!-- =================================== PROCESS =================================== -->
 				<section id="process">
           <div class="row">
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                   <h2>Design Process</h2>
                   <hr class="star-primary">
               </div>
@@ -190,15 +212,28 @@
                 <h3>Design ideation</h3>
 
                 <p align ="left">The first design iteration involved, having a fixed current weather display while adopting the android card UI to display the event dashboard</p>
-                <img src="..\img\WxGen\Des_1.png" class="img-responsive img-centered" alt="">
+                <!-- <div class="row" >
+                  <div class="col-md-4">
+                    <img src="..\img\WxGen\Des_1.png" class="img-responsive" alt="">
+
+                  </div>
+                  <div class="col-md-4">
+                    <img src="..\img\WxGen\Des_2.png" class="img-responsive" alt="">
+                  </div>
+                  <div class="col-md-4">
+                    <img src="..\img\WxGen\Des_3.png" class="img-responsive" alt="">
+                  </div>
+                </div> -->
+                <img src="..\img\WxGen\whiteboard.png" class="img-responsive img-centered" alt="">
+                <h5 class="text-center"><span>Whiteboarding</span></h5>
                 <p align ="left">The first issue that popped up was the necessity to keep all the details visible at all times in this layout, which reduced the number of events that can be seen immediately, further the WxGen team wanted to make the events color coded to facilitate simple status checks. This prompted me to propose a expanding card UI to show both status and enable viewing details on demand</p>
-                <blockquote class="blockquote col-lg-12 col-lg-offset-0">On a wedding day there are a thousand things that can go wrong, I need to be on top of all of it.</blockquote>
-                <img src="..\img\WxGen\Des_2.png" class="img-responsive img-centered" alt="">
+
+                <!-- <img src="..\img\WxGen\Des_2.png" class="img-responsive img-centered" alt=""> -->
                 <p align ="left">The previous design was well recieved but I was not satisfied, I was inspired by the goal meter of my misfit and proposed a redesign of the event dashboard that incorporated a way to display a progressive change in status</p>
-                <img src="..\img\WxGen\Des_3.png" class="img-responsive img-centered" alt="">
-                <h3>Initial Prototype</h3>
-                <p align ="justify">The final design came together based on the above ideas. The design was presented to users for additional perspective, The users indicated that usability was improved greatly and were more comfortable in accomplishing their tasks.</p>
-                <img src="..\img\WxGen\Thumbnail.png" class="img-responsive img-centered" alt="">
+                <!-- <img src="..\img\WxGen\Des_3.png" class="img-responsive img-centered" alt=""> -->
+                <h3>Wireframes</h3>
+                <p align ="justify">The final design came together based on the above ideas. The designs were wireframed and presented to users for usability testing</p>
+                <img src="..\img\WxGen\wireframe.png" class="img-responsive img-centered" alt="">
               </div>
             </div>
           </div>
@@ -208,10 +243,31 @@
           </div> -->
 				</section>
 
+        <!-- =================================== User Feedback =================================== -->
+				<section id="users">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                  <h2>User Feedback</h2>
+                  <hr class="star-primary">
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-10 col-md-10 col-sm-12 col-lg-offset-1 col-md-offset-1">
+              <div class="modal-body">
+                <blockquote class="blockquote col-lg-12 col-lg-offset-0">On a wedding day there are a thousand things that can go wrong, I need to be on top of all of it.</blockquote>
+                <h3>Initial Prototype</h3>
+                <p align ="justify">At the end of the A/B testing, The users indicated that they preferred the circular design, This was then chosen to implement the Initial prototype, on which I implemented a progressive indicator</p>
+                <img src="..\img\WxGen\Thumbnail.png" class="img-responsive img-centered" alt="">
+                <p>However, at the final testing, two users indicated confusion over the progressive event status sliders therefore the slider was removed in favor of discrete circles that varied from green or yellow to red</p>
+              </div>
+            </div>
+          </div>
+				</section>
+
 				<!-- =================================== RESULTS =================================== -->
 				<section id="results">
           <div class="row">
-              <div class="col-lg-12 text-center">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
                   <h2>Results</h2>
                   <hr class="star-primary">
               </div>
@@ -220,14 +276,21 @@
             <div class="col-lg-10 col-md-10 col-sm-12 col-lg-offset-1 col-md-offset-1">
               <div class="modal-body">
 
-                <p>One of the team members indicated confusion over the progressive event status sliders therefore the slider was removed in favor of discrete circles that varied from green or yellow to red</p>
+
                 <img src="..\img\WxGen\WxGENaft.png" class="img-responsive img-centered" alt="">
                 <p align ="justify">The rule of thumb in the entire graphical design process was to keep the design simple and familiar while incorporating WxGen's unique value proposition. While reusing a generic weather app theme, I added in a horizontal-scrolling dashboard which would let the customer see at a glance about what they needed to know. They could also click on an event and get more information, alter thresholds and other variables as needed. This new design was well received by the team and their customers and Weather General has since received funding to take their product to the next stage</p>
+                <div class="text-center">
+                  <a href="http://57djuy.axshare.com/#c=2" target="_blank" class="btn btn-success btn-lg text-center">
+                      <i class="fa fa-cogs"></i> Try the Prototype
+                  </a>
+                </div>
+
               </div>
             </div>
           </div>
 				</section>
-			</article>
+
+      </article>
   </div>
 
     <!-- Footer -->
@@ -315,6 +378,7 @@
           }
     });
     </script>
+
 </body>
 
 </html>
